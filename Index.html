@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Styles - Diseño Gráfico en Moda</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+
+        <header>
+            <nav>
+                <a href="#about" data-tooltip="Acerca de Alex">Sobre Mí</a>
+                <a href="#portfolio" data-tooltip="Ver proyectos de Alex">Portafolio</a>
+                <a href="#contact" data-tooltip="Contacto de Alex">Contacto</a>
+            </nav>
+        </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Alex Styles</h1>
+                <p>Transformando la moda con creatividad visual</p>
+                <a href="#portfolio" class="button">Ver Mis Diseños</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Sobre Mí</h2>
+                <p>"Alex Styles es un diseñador gráfico especializado en moda, con una pasión por crear identidades visuales innovadoras para marcas y diseñadores emergentes. Su trabajo fusiona tendencias modernas con técnicas de ilustración digital para elevar la estética de la industria de la moda. Desde branding hasta patrones textiles, Alex redefine el lenguaje visual del estilo.."</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Portafolio</h2>
+                <div class="portfolio-grid">
+                    <div class="project" data-modal="project1">
+                        <img src="imagenes/PT1.jpg" alt="Project 1">
+                        <h3>Alta Costura Digital</h3>
+                    </div>
+                    <div class="project" data-modal="project2">
+                        <img src="imagenes/PT2.jpg" alt="Project 2">
+                        <h3>Estampados Vanguardistas</h3>
+                    </div>
+                    <div class="project" data-modal="project3">
+                        <img src="imagenes/PT3.jpg" alt="Project 3">
+                        <h3>Fashion Branding</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project1" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Alta Costura Digital</h2>
+                    <p>Explorando el arte de la alta costura a través de gráficos digitales, esta serie redefine el lujo con una combinación de ilustración y diseño contemporáneo.</p>
+                    <img src="imagenes/P1.jpg" alt="Project 1 large image">
+                </div>
+            </div>
+
+            <div id="project2" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Estampados Vanguardistas</h2>
+                    <p>Inspirados en las últimas tendencias de la moda, estos estampados fusionan formas geométricas y colores vibrantes para un impacto visual único.</p>
+                    <img src="imagenes/P2.jpg" alt="Project 2 large image">
+                </div>
+            </div>
+
+            <div id="project3" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Fashion Branding</h2>
+                    <p>Diseños innovadores para la identidad visual de marcas de moda. Desde logotipos hasta packaging, este proyecto redefine la imagen de la industria.</p>
+                    <img src="imagenes/P3.jpg" alt="Project 3 large image">
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form action="submit-form.php" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alex Styles. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> </body>
+</html>
